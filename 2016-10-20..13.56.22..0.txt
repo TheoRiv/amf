@@ -1,0 +1,37 @@
+Drone target: 41.8341887051, -87.6270895824
+Connecting to vehicle on: COM3
+Connection established
+Clearing mission
+Preparing mission
+Uploading mission
+Basic pre-arm checks
+Arming motors
+ Waiting for arming...
+## mode changed: GUIDED
+ Waiting for arming...
+Starting throtle
+## mode changed: AUTO
+1 / 7: taking off @ altitude -0.7
+1 / 7: taking off @ altitude -0.2
+1 / 7: taking off @ altitude -0.1
+1 / 7: taking off @ altitude -0.1
+1 / 7: taking off @ altitude -0.1
+1 / 7: taking off @ altitude -0.2
+1 / 7: taking off @ altitude -0.2
+1 / 7: taking off @ altitude -0.2
+1 / 7: taking off @ altitude -0.2
+1 / 7: taking off @ altitude -0.2
+1 / 7: taking off @ altitude -0.2
+1 / 7: taking off @ altitude -0.3
+1 / 7: taking off @ altitude -0.3
+1 / 7: taking off @ altitude -0.4
+1 / 7: taking off @ altitude -0.6
+1 / 7: taking off @ altitude -0.6
+1 / 7: taking off @ altitude -0.6
+1 / 7: taking off @ altitude 0.9
+1 / 7: taking off @ altitude 0.9
+1 / 7: taking off @ altitude 0.9
+1 / 7: taking off @ altitude 0.9
+1 / 7: taking off @ altitude 0.9
+1 / 7: taking off @ altitude 0.9
+1 / 7: taking off @ altitude 1.0

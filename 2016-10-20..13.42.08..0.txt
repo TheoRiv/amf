@@ -1,0 +1,13 @@
+Drone target: 41.8341619757, -87.6270724833
+Connecting to vehicle on: COM3
+Connection established
+Clearing mission
+Preparing mission
+Uploading mission
+Basic pre-arm checks
+Arming motors
+ Waiting for arming...
+## mode changed: GUIDED
+ Waiting for arming...
+Starting throtle
+## mode changed: AUTO

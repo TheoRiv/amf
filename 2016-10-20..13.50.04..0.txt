@@ -1,0 +1,6 @@
+Drone target: 41.8341477367, -87.6271204278
+Connecting to vehicle on: COM3
+Connection established
+Clearing mission
+Preparing mission
+Uploading mission

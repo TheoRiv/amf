@@ -1,0 +1,3 @@
+Drone target: 41.834171968, -87.6270641014
+Connecting to vehicle on: COM3
+Connection established
