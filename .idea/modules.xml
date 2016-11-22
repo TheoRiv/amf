@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/amf.iml" filepath="$PROJECT_DIR$/.idea/amf.iml" />
       <module fileurl="file://$PROJECT_DIR$/amf.iml" filepath="$PROJECT_DIR$/amf.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dronekit-python/.idea/dronekit-python.iml" filepath="$PROJECT_DIR$/../dronekit-python/.idea/dronekit-python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sikset/.idea/sikset.iml" filepath="$PROJECT_DIR$/../sikset/.idea/sikset.iml" />
     </modules>
   </component>
 </project>

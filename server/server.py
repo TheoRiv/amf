@@ -7,6 +7,9 @@ import simplejson
 import threading
 import urlparse
 import ports
+import serial
+import time
+import re
 
 """
 This threading server was implemented based on:
@@ -45,6 +48,7 @@ class Handler(BaseHTTPRequestHandler):
         Prevents console from being flooded with the accepted GETs.
         """
         return
+
 
     def do_GET(self):
         """
@@ -114,6 +118,32 @@ class Handler(BaseHTTPRequestHandler):
         """
         POST request handler.
         """
+
+
+        #Reset the NetID to connect to the right drone
+        ser = serial.Serial()
+        ser.port = port_list[0]
+        ser.timeout = 0
+        ser.baudrate = 57600
+        ser.open();
+        print("Connected to 3DR Antenna on Serial Port:", ser.portstr)
+        #Flush serial input / output
+        ser.flushOutput()
+        ser.flushInput()
+        #time.sleep(1)
+        #Set the NETID to the desired one
+        command = "%sS3=%d\r\n" % ('AT', 80)
+        ser.write(command)
+        #time.sleep(2)
+        inBuffer = ser.inWaiting()
+        response = ""
+        while inBuffer > 0:
+            response = response + ser.readline(inBuffer)
+            #time.sleep(2)
+            inBuffer = ser.inWaiting()
+        ser.close()
+
+        return
         self._set_headers()
         print "@@@@@ start POST"
         self.data_string = self.rfile.read(int(self.headers['Content-Length']))
@@ -158,6 +188,8 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write('\n')
         print "@@@@@ end POST"
         return
+
+
 
 class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
     """Handle requests in a separate thread."""
